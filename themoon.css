@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* =============================================================================
+  RESETS
+============================================================================= */
+
+html,
+body,
+div,
+h1,
+p,
+a,
+video {
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body {
+	height: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	background-color: #272932;
+}
+
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+*:before, *:after { -webkit-box-sizing: inherit; -moz-box-sizing: inherit; box-sizing: inherit; }
+
+.parallax-container {
+	background-attachment: fixed;
+	background-position: center;
+	position: relative;
+	background-size: auto 100%;
+	overflow: hidden;
+}
+
+#lead {
+    height: 5000px;
+    overflow: hidden;
+    background: url(paul-gilmore-206587-unsplash-crop-edit.jpg);
+    background-position: center;
+    width: 100vw;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.overlay {
+	position: fixed;
+	/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAIklEQVQYV2NkQID/DAwMjDAunMHAwEC6BMgUuC5ko4iTAAC7mgYHLwjlCQAAAABJRU5ErkJggg==); */
+	width: 100%;
+	background-attachment: scroll;
+	height: 100vh;
+	z-index: 99;
+}
+
+.knockout {
+    position: absolute;
+    top: 100vh;
+    left: 50vw;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    display: inline-block;
+    text-align: center;
+    height: 100vh;
+    font-weight: 700;
+    transform: translate(-50%,0);
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0 1rem 1rem;
+    color: #000;
+    line-height: 2em;
+    z-index: 98;
+}
+
+.single-line {
+	font-size: 1em;
+	height: 100px;
+	line-height: 2em;
+	color: #eee;
+}
+
+@media screen and (max-width : 768px) {
+	.knockout {
+		line-height: 70vw !important;
+		font-size: 45vw !important;
+		padding-top: 5vh !important;
+	}
+}
+
+.knockoutcontainer {
+	transform: skewY(-3deg);
+}
+
+#scroll {
+    position: absolute;
+    color: #eee;
+    font-size: 2em;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Oswald', sans-serif;
+    opacity: .7;
+}
+
+.shape {
+	mix-blend-mode: color-burn;
+    position: fixed;
+    border-radius: 50%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    background: #f00;
+    height: 50vh;
+    width: 50vh;
+}
+.spacer {
+	height:200px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
